@@ -4,34 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  
     <title>Document</title>
 </head>
 
 
 <body>
-<h1>Calculadora de Indice de masa corporal</h1>
 
-<form>
-    <fieldset>
-        <legend>Datos básicos</legend>
+    <header>
+        <h1 id="title1">Calculadora de Indice de masa corporal</h1>
+    </header>
 
-        <label >Edad</label>
-        <input type="number" id="edad"/><br>
+    <div id="cuerpo">
 
-        <label >Sexo</label>
-        <input placeholder="Femenino/Masculino" id="sexo" type="text"/><br>
+        <main>
+            <form>
+                <fieldset>
+                    <legend id="legenda">Descubre tu indice de masa corporal</legend>
 
-        <label >Peso(KG)</label>
-        <input id="peso" type="number"/><br>
+                    <label  >Edad</label>
+                    <input  type="number" id="edad"  required/><br>
 
-        <label >Estatura(Metro)</label>
-        <input placeholder="Ejemplo   (1.50)" id="estatura" step= "0.01" type="number"/><br>
+                    <label > Sexo </label>
+                    <select type="text" id="sexo"></select><br>
+                    <!-- <input  id="sexo" type="text"  required placeholder="Femenino/Masculino"/><br> -->
 
-        <button id="boton" onclick="calcularIMC()">Enviar</button>
+                    <label >Peso(KG)</label>
+                    <input id="peso" type="number"  required/><br>
 
-    </fieldset>
-</form>
-    <script src="script.js"></script>
+                    <label>Estatura</label>
+                    <input  id="estatura" step= "0.01" type="number"  required placeholder="Ejemplo   (1.50)"/><br>
+
+                </fieldset>
+                    <button  id="boton"  type="submit" onclick="calcularIMC()">Calcular IMC</button>
+            </form>
+        </main>
+
+
+        <div id="aside">
+            <legend id="title-resultado"  >RESULTADO</legend>
+            <div id="div-resultado">
+                <label id="resultado" step='0.01'  ></label>
+            </div>
+            <hr>
+        <!--<h5 class="title2">Peso ideal</h5>
+                <label  id="peso-ideal" for="number"></label>-->
+            <div >
+                <img  id="img" src="img/def.jpg" alt="">
+            </div>
+            </div>
+
+    </div>
+    <div id="promedio">
+        <button   type="button" onclick="promedioMujeres()">Calcular IMC Mujeres</button>
+        <label  id="resultadoPromedio"></label>
+        <button  type="button" onclick="promedioHombres()">Calcular IMC Hombres</button>
+    </div>
+
+
+
+    
+
+    <script src="./scripts/script.js" ></script>
+    <script src="./scripts/promedio.js" ></script>
 </body>
 </html>

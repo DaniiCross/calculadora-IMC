@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: playfair Display;
+}
+
+
+
+header{
+    background-color: ;
+    margin: 0%;
+    padding: 3%;
+    background: linear-gradient(50deg, #80DE28, rgb(8, 168, 16), #80DE28);
+    box-shadow: 5px 5px rgb(183, 189, 183);
+}
+
+#title1{
+    color: white;
+    text-shadow: 10px 10px rgb(56, 161, 56);
+    opacity: 0.9;
+    text-align: center;
+}
+#cuerpo{
+    display:flex;
+}
+
+main{
+    margin: 5%;
+    background-color: rgb(245, 246, 244);
+    padding: 5%;
+    border-radius: 10px;
+}
+
+
+#legenda{
+    margin-bottom: 50px;
+}
+
+form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+
+form input[type="text"],
+form input[type="number"],
+form select[type="text"]
+{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #0ee945;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form button{
+	width:100%;
+	padding:8px 16px;
+	margin-top:80px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:rgb(8, 168, 16);
+}
+
+form button[type="submit"]:hover{
+	cursor:pointer;
+
+}
+
+#aside{
+    margin-top: 5%;
+    background-color: rgb(245, 246, 244);
+    margin-bottom: 5%;
+    border-radius: 10px;
+    width:  430px;
+    padding: 2%;
+    text-align: center;
+    padding-top: 70px;
+    
+}
+
+aside{
+   margin: 20%;
+   padding: auto;
+}
+
+#title-resultado{
+    text-align: center;
+}
+
+#div-resultado{
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+
+#img{
+    width: 250px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+#resultado{
+    font-size: 30px;
+}
+
+section{
+    margin: 10%;
+}
+
+button{
+	width:100%;
+	padding:8px 16px;
+	margin-top:50px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:rgb(8, 168, 16);
+}
+
+#promedio{
+    background-color: rgb(245, 246, 244);
+    margin: 5px;
+    display: flex;
+    padding: 5%;
+
+}
+
+#resultadoPromedio{
+    margin: 10px;
+    text-align: center;
+}
